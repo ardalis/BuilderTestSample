@@ -16,6 +16,8 @@ namespace BuilderTestSample.Services
 
         private void ValidateOrder(Order order)
         {
+            // throw InvalidOrderException unless otherwise noted.
+
             // order ID should be zero (it's a new order)
             if (order.Id != 0) throw new InvalidOrderException("Order ID must be 0.");
 
@@ -27,6 +29,7 @@ namespace BuilderTestSample.Services
 
         private void ValidateCustomer(Customer customer)
         {
+            // throw InvalidCustomerException unless otherwise noted
             // customer has an ID
             // customer has an address
             // customer has a first and last name
@@ -38,6 +41,7 @@ namespace BuilderTestSample.Services
 
         private void ValidateAddress(Address homeAddress)
         {
+            // throw InvalidAddressException unless otherwise noted
             // street1 is required
             // city/state/postalcode/country are required
         }
