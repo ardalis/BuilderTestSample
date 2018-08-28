@@ -13,3 +13,9 @@ Continue until no more TODO comments remain and all tests are passing. If you're
 
 ![image](https://user-images.githubusercontent.com/782127/44723822-1134e000-aa9f-11e8-957a-78bb8abf118c.png)
 
+### Tips
+
+There are generally two approaches to the Builder pattern. The simpler one is shown in the OrderBuilder that is provided. In this approach, a new instance of the thing-to-be-built is created as a private field when the Builder is created. It is manipulated by the Builder methods and then simply returned by `Build`. Something to watch out for with this approach is reuse of the Builder, since any calls to Builder methods after `Build` has been called will still modify the instance that was previously returned. You can correct this by re-instantiating the private field when `Build` is called.
+
+The second approach requires a bit more code but is useful when you can't just instantiate the object initially. You can try out this approach when you build a `CustomerBuilder` as part of this exercise. `Customer` has a parameterized constructor that requires an `id`, and its `Id` property is private. Thus, you can't just instantiate a private `Customer` instance when you create the `CustomerBuilder`. Instead, you should store each property value in its own private field, and then create the `Customer` instance in the `Build` method. This is the "more correct" way to implement the pattern, but it does require more code than the "shortcut" approach of just creating the instance when you create the builder.
+
