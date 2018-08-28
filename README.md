@@ -9,4 +9,7 @@ Fork or clone the repository locally so you can work on it. You should be able t
 
 Open `OrderService.cs`. Read through the TODO comments. Each one represents a new piece of functionality to be added and tested. Write a test in `OrderServicePlaceOrder` for each new TODO item. Be sure to use a Builder to create the order and its associated customer and address. Verify the test fails when you first run it, since you haven't yet implemented the code that will make it pass. Then add the code. Once you see the test pass (and all other tests still pass), you should remove the TODO comment (and optionally commit your code to your local repository).
 
-Continue until no more TODO comments remain and all tests are passing.
+Continue until no more TODO comments remain and all tests are passing. If you're using Visual Studio, you can use the Task List window to see a list of your remaining TODO items:
+
+![image](https://user-images.githubusercontent.com/782127/44723822-1134e000-aa9f-11e8-957a-78bb8abf118c.png)
+
