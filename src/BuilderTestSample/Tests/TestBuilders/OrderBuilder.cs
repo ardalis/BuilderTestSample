@@ -15,6 +15,18 @@ namespace BuilderTestSample.Tests.TestBuilders
             return this;
         }
 
+        public OrderBuilder TotalAmount(int totalAmount)
+        {
+            _order.TotalAmount = totalAmount;
+            return this;
+        }
+
+        public OrderBuilder Customer(Customer customer)
+        {
+            _order.Customer = customer;
+            return this;
+        }
+
         public Order Build()
         {
             return _order;
@@ -23,7 +35,10 @@ namespace BuilderTestSample.Tests.TestBuilders
         public OrderBuilder WithTestValues()
         {
             _order.TotalAmount = 100m;
-            _order.Customer = new Customer();
+
+            // replace with CustomerBuilder eventually
+            _order.Customer = new Customer(CustomerBuilder.TEST_CUSTOMER_ID);
+
             _order.Customer.HomeAddress = new Address();
 
             return this;
