@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace BuilderTestSample.Model
 {
     public class Customer
     {
+        public Customer(int id)
+        {
+            Id = id;
+        }
+
         public int Id { get; private set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
