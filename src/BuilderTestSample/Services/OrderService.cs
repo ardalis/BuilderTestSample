@@ -18,11 +18,11 @@ namespace BuilderTestSample.Services
         {
             // throw InvalidOrderException unless otherwise noted.
 
-            // TODO: order ID should be zero (it's a new order)
+            // TODO: order ID must be zero (it's a new order)
             if (order.Id != 0) throw new InvalidOrderException("Order ID must be 0.");
 
-            // TODO: order amount is greater than zero
-            // TODO: order has a customer
+            // TODO: order amount must be greater than zero
+            // TODO: order must have a customer (customer is not null)
 
             ValidateCustomer(order.Customer);
         }
@@ -32,7 +32,7 @@ namespace BuilderTestSample.Services
             // throw InvalidCustomerException unless otherwise noted
 
             // TODO: customer must have an ID
-            // TODO: customer must have an address
+            // TODO: customer must have an address (it is not null)
             // TODO: ustomer must have a first and last name
             // TODO: customer must have credit rating > 200 (otherwise throw InsufficientCreditException)
             // TODO: customer must have total purchases >= 0
@@ -44,11 +44,11 @@ namespace BuilderTestSample.Services
         {
             // throw InvalidAddressException unless otherwise noted
 
-            // TODO: street1 is required
-            // TODO: city is required
-            // TODO: state is required
-            // TODO: postalcode is required
-            // TODO: country is required
+            // TODO: street1 is required (not null or empty)
+            // TODO: city is required (not null or empty)
+            // TODO: state is required (not null or empty)
+            // TODO: postalcode is required (not null or empty)
+            // TODO: country is required (not null or empty)
         }
 
         private void ExpediteOrder(Order order)
