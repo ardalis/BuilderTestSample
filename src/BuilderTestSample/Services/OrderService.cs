@@ -32,7 +32,7 @@ namespace BuilderTestSample.Services
             // throw InvalidCustomerException unless otherwise noted
             // create a CustomerBuilder to implement the tests for these scenarios
 
-            // TODO: customer must have an ID
+            // TODO: customer must have an ID > 0
             // TODO: customer must have an address (it is not null)
             // TODO: ustomer must have a first and last name
             // TODO: customer must have credit rating > 200 (otherwise throw InsufficientCreditException)
