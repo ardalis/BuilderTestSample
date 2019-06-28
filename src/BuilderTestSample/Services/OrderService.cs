@@ -34,7 +34,7 @@ namespace BuilderTestSample.Services
 
             // TODO: customer must have an ID > 0
             // TODO: customer must have an address (it is not null)
-            // TODO: ustomer must have a first and last name
+            // TODO: customer must have a first and last name
             // TODO: customer must have credit rating > 200 (otherwise throw InsufficientCreditException)
             // TODO: customer must have total purchases >= 0
 
