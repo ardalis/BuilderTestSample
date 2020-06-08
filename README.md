@@ -1,6 +1,10 @@
 # Builder Test Sample
 Show how to use a builder with unit tests.
 
+## Give a Star! :star:
+
+If you complete this kata, please give it a star to signify your accomplishment! Thanks!
+
 You can use this sample as a starting point to practice using the Builder Pattern for your unit test data.
 
 [Source - Using the Builder Pattern for Your Test Data](https://ardalis.com/improve-tests-with-the-builder-pattern-for-test-data)
