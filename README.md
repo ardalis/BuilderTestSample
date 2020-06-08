@@ -1,7 +1,11 @@
 # Builder Test Sample
 Show how to use a builder with unit tests.
 
-You can use this sample as a starting point to practice using the Builder Pattern for your unit test data. [Source - Using the Builder Pattern for Your Test Data](https://ardalis.com/improve-tests-with-the-builder-pattern-for-test-data) It includes a small working test data builder for the `Order` class, but requires you to create additional builders for `Customer` and `Address`. You can go through the comments in `OrderService` to build out the `PlaceOrder` method's functionality as a [kata](https://github.com/ardalis/kata-catalog) to practice applying this pattern.
+You can use this sample as a starting point to practice using the Builder Pattern for your unit test data.
+
+[Source - Using the Builder Pattern for Your Test Data](https://ardalis.com/improve-tests-with-the-builder-pattern-for-test-data)
+
+It includes a small working test data builder for the `Order` class, but requires you to create additional builders for `Customer` and `Address`. You can go through the comments in `OrderService` to build out the `PlaceOrder` method's functionality as a [kata](https://github.com/ardalis/kata-catalog) to practice applying this pattern.
 
 ## Kata Instructions
 
