@@ -7,7 +7,7 @@ namespace BuilderTestSample.Tests.TestBuilders
     /// </summary>
     public class OrderBuilder
     {
-        private Order _order = new Order();
+        private Order _order = new ();
 
         public OrderBuilder WithId(int id)
         {
