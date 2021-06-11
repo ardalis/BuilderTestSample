@@ -7,8 +7,8 @@ namespace BuilderTestSample.Tests
 {
     public class OrderServicePlaceOrder
     {
-        private readonly OrderService _orderService = new OrderService();
-        private readonly OrderBuilder _orderBuilder = new OrderBuilder();
+        private readonly OrderService _orderService = new ();
+        private readonly OrderBuilder _orderBuilder = new ();
 
         [Fact]
         public void ThrowsExceptionGivenOrderWithExistingId()
