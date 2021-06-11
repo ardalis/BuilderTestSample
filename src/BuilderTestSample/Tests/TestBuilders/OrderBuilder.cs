@@ -9,17 +9,11 @@ namespace BuilderTestSample.Tests.TestBuilders
     {
         private Order _order = new Order();
 
-        public OrderBuilder Id(int id)
+        public OrderBuilder WithId(int id)
         {
             _order.Id = id;
             return this;
         }
-
-        public Order Build()
-        {
-            return _order;
-        }
-
         public OrderBuilder WithTestValues()
         {
             _order.TotalAmount = 100m;
@@ -29,6 +23,11 @@ namespace BuilderTestSample.Tests.TestBuilders
             // _order.Customer.HomeAddress = new Address();
 
             return this;
+        }
+
+        public Order Build()
+        {
+            return _order;
         }
     }
 }

@@ -15,7 +15,7 @@ namespace BuilderTestSample.Tests
         {
             var order = _orderBuilder
                             .WithTestValues()
-                            .Id(123)
+                            .WithId(123)
                             .Build();
 
             Assert.Throws<InvalidOrderException>(() => _orderService.PlaceOrder(order));
