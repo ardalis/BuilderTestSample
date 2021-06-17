@@ -14,7 +14,6 @@ namespace BuilderTestSample.Tests
         public void ThrowsExceptionGivenOrderWithExistingId()
         {
             var order = _orderBuilder
-                            .WithTestValues()
                             .WithId(123)
                             .Build();
 
